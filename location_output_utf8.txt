@@ -1,0 +1,307 @@
+Location Manager State:
+  User Info:
+    current users: u[0]
+  Location Settings:
+    Location Setting: true
+    Location Allow/Deny Packages:
+    Throttling Allow Packages:
+      com.google.android.gms
+    Bypass Allow Packages:
+      com.google.android.dialer[*]
+      com.google.android.gms[.thunderbird]
+  Location Providers:
+    passive provider:
+      service: registered
+      listeners:
+        10097/com.google.android.gms[fused_location_provider]/81700544 Request[PASSIVE, minUpdateInterval=0, hiddenFromAppOps, WorkSource{10097 com.google.android.gms}]
+        1000/android[SensorNotificationService]/6B2035FB Request[PASSIVE, minUpdateInterval=+30m0s0ms, minUpdateDistance=100000.0, WorkSource{1000 android}]
+        10097/com.google.android.gms[network_location_provider]/58C1B8E9 Request[PASSIVE, minUpdateInterval=0, hiddenFromAppOps, WorkSource{10097 com.google.android.gms}]
+      last location=Location[gps 37.421998,-122.084000 hAcc=5.0 et=+20133d0h7m17s57ms alt=5.0 vAcc=0.5 vel=0.0 sAcc=0.5 bear=0.0 bAcc=30.0 {Bundle[{satellites=0, maxCn0=0, meanCn0=0}]}]
+      enabled=true
+      allowed=true
+      identity=1000/android[LocationService]
+      properties=ProviderProperties[powerUsage=Low, accuracy=Fine]
+    network provider:
+      service: ProviderRequest[OFF]
+      listeners:
+        1000/android[GnssService]/C887C0DE Request[PASSIVE, minUpdateInterval=0, hiddenFromAppOps, WorkSource{1000 android}]
+      last location=Location[network 37.422094,-122.083922 hAcc=600.0 et=+5h0m34s382ms]
+      enabled=true
+      allowed=true
+      identity=10097/com.google.android.gms[network_location_provider]
+      extra attribution tags={awareness_provider, activity_recognition_provider, network_location_provider, gnss_location_provider, network_location_calibration, current_semantic_location, fused_location_provider, wearable_flp_shim, geofencer_provider}
+      properties=ProviderProperties[powerUsage=Medium, accuracy=Fine, requires=network, supports=[altitude]]
+      stationary throttled=false (not idle) (not stationary)
+      target service=10097/com.google.android.gms/com.google.android.location.network.NetworkLocationService@2
+      connected=true
+    fused provider:
+      service: ProviderRequest[OFF]
+      last location=Location[fused 37.422094,-122.083922 hAcc=600.0 et=+7h17m34s839ms]
+      enabled=true
+      allowed=true
+      identity=10097/com.google.android.gms[fused_location_provider]
+      extra attribution tags={awareness_provider, activity_recognition_provider, network_location_provider, gnss_location_provider, network_location_calibration, current_semantic_location, fused_location_provider, wearable_flp_shim, geofencer_provider}
+      properties=ProviderProperties[powerUsage=Low, accuracy=Fine, supports=[bearing,speed,altitude]]
+      stationary throttled=false (not idle) (not stationary)
+      target service=10097/com.google.android.gms/com.google.android.location.fused.FusedLocationService@1
+      connected=true
+    gps provider:
+      service: ProviderRequest[OFF]
+      last location=Location[gps 37.421998,-122.084000 hAcc=5.0 et=+20133d0h7m17s57ms alt=5.0 vAcc=0.5 vel=0.0 sAcc=0.5 bear=0.0 bAcc=30.0 {Bundle[{satellites=0, maxCn0=0, meanCn0=0}]}]
+      enabled=true
+      allowed=true
+      identity=1000/android[GnssService]
+      properties=ProviderProperties[powerUsage=High, accuracy=Fine, requires=satellite, supports=[bearing,speed,altitude]]
+      stationary throttled=false (not idle) (not stationary)
+      mStarted=false   (changed +2h17m35s817ms ago)
+      mBatchingEnabled=false
+      mBatchingStarted=false
+      mBatchSize=0
+      mFixInterval=10000
+      GNSS_KPI_START
+        KPI logging start time: +25s397ms
+        KPI logging end time: +7h18m11s454ms
+        Number of location reports: 1
+        Percentage location failure: 0.0
+        Number of TTFF reports: 1
+        TTFF mean (sec): 4.055
+        TTFF standard deviation (sec): 0.0
+        Number of position accuracy reports: 1
+        Position accuracy mean (m): 5.0
+        Position accuracy standard deviation (m): 0.0
+        Number of CN0 reports: 13
+        Top 4 Avg CN0 mean (dB-Hz): 30.0
+        Top 4 Avg CN0 standard deviation (dB-Hz): 0.0
+        Total number of sv status messages processed: 78
+        Total number of L5 sv status messages processed: 0
+        Total number of sv status messages processed, where sv is used in fix: 0
+        Total number of L5 sv status messages processed, where sv is used in fix: 0
+        Number of L5 CN0 reports: 0
+        Used-in-fix constellation types: 
+      GNSS_KPI_END
+      Power Metrics
+        Time on battery (min): 1547.04845
+        Amount of time (while on battery) Top 4 Avg CN0 > 20.0 dB-Hz (min): 0.0076
+        Amount of time (while on battery) Top 4 Avg CN0 <= 20.0 dB-Hz (min): 0.0
+        Energy consumed while on battery (mAh): 0.0
+      Hardware Version: 
+  Historical Aggregate Location Provider Data:
+    passive:
+      10097/com.google.android.gms[fused_location_provider]: min/max interval = passive/passive, total/active/foreground duration = +7h17m28s512ms/+7h17m28s506ms/+7h17m28s509ms, locations = 69
+      1000/android[SensorNotificationService]: min/max interval = passive/passive, total/active/foreground duration = +7h17m36s143ms/+7h17m36s107ms/+7h17m36s107ms, locations = 1
+      10097/com.google.android.gms[network_location_provider]: min/max interval = passive/passive, total/active/foreground duration = +7h17m22s787ms/+7h17m22s727ms/+7h17m22s769ms, locations = 61
+    gps:
+      10097/com.google.android.gms[fused_location_provider]: min/max interval = 10s/10s, total/active/foreground duration = +11s146ms/+11s134ms/+11s145ms, locations = 1
+    network:
+      1000/android[GnssService]: min/max interval = passive/passive, total/active/foreground duration = +7h17m45s975ms/+7h17m31s215ms/+7h17m45s973ms, locations = 34
+  GNSS Manager:
+    Capabilities: [NONE]
+    Status Provider:
+      service: registered
+      listeners:
+        10097/com.google.android.gms[network_location_provider]/41167087
+    Measurements Provider:
+      service: unregistered
+  Geofence Manager:
+    service: unregistered
+  Event Log:
+    02-14 03:42:25.597: fused provider received location[1]
+    02-14 03:43:25.601: fused provider received location[1]
+    02-14 03:44:25.604: fused provider received location[1]
+    02-14 03:45:25.602: fused provider received location[1]
+    02-14 03:46:25.604: fused provider received location[1]
+    02-14 03:47:25.608: fused provider received location[1]
+    02-14 03:48:25.610: fused provider received location[1]
+    02-14 03:49:25.614: fused provider received location[1]
+    02-14 03:50:25.617: fused provider received location[1]
+    02-14 03:51:25.623: fused provider received location[1]
+    02-14 03:52:25.627: fused provider received location[1]
+    02-14 03:53:25.631: fused provider received location[1]
+    02-14 03:54:25.636: fused provider received location[1]
+    02-14 03:55:25.640: fused provider received location[1]
+    02-14 03:56:25.642: fused provider received location[1]
+    02-14 03:57:25.647: fused provider received location[1]
+    02-14 03:58:25.647: fused provider received location[1]
+    02-14 03:59:25.650: fused provider received location[1]
+    02-14 04:00:25.654: fused provider received location[1]
+    02-14 04:01:25.654: fused provider received location[1]
+    02-14 04:02:25.661: fused provider received location[1]
+    02-14 04:03:25.666: fused provider received location[1]
+    02-14 04:04:25.667: fused provider received location[1]
+    02-14 04:05:25.672: fused provider received location[1]
+    02-14 04:06:25.675: fused provider received location[1]
+    02-14 04:07:25.681: fused provider received location[1]
+    02-14 04:08:25.683: fused provider received location[1]
+    02-14 04:09:25.686: fused provider received location[1]
+    02-14 04:10:25.688: fused provider received location[1]
+    02-14 04:11:25.691: fused provider received location[1]
+    02-14 04:12:25.693: fused provider received location[1]
+    02-14 04:13:25.698: fused provider received location[1]
+    02-14 04:14:25.704: fused provider received location[1]
+    02-14 04:15:25.707: fused provider received location[1]
+    02-14 04:16:25.710: fused provider received location[1]
+    02-14 04:17:25.713: fused provider received location[1]
+    02-14 04:18:25.714: fused provider received location[1]
+    02-14 04:19:25.718: fused provider received location[1]
+    02-14 04:20:25.719: fused provider received location[1]
+    02-14 04:21:25.721: fused provider received location[1]
+    02-14 04:22:25.731: fused provider received location[1]
+    02-14 04:23:25.731: fused provider received location[1]
+    02-14 04:24:25.739: fused provider received location[1]
+    02-14 04:25:25.743: fused provider received location[1]
+    02-14 04:26:25.749: fused provider received location[1]
+    02-14 04:27:25.754: fused provider received location[1]
+    02-14 04:28:25.757: fused provider received location[1]
+    02-14 04:29:25.762: fused provider received location[1]
+    02-14 04:30:25.763: fused provider received location[1]
+    02-14 04:31:25.765: fused provider received location[1]
+    02-14 04:32:25.768: fused provider received location[1]
+    02-14 04:33:25.771: fused provider received location[1]
+    02-14 04:34:25.772: fused provider received location[1]
+    02-14 04:35:25.778: fused provider received location[1]
+    02-14 04:36:25.783: fused provider received location[1]
+    02-14 04:37:19.580: gps provider +registration 10097/com.google.android.gms[fused_location_provider]/3EE63518 -> Request[@+10s0ms HIGH_ACCURACY, hiddenFromAppOps, WorkSource{10147 com.aurumcore.staging}]
+    02-14 04:37:19.582: gps provider request = ProviderRequest[@+10s0ms, HIGH_ACCURACY, WorkSource{10147 com.aurumcore.staging}]
+    02-14 04:37:19.594: passive provider +registration 10097/com.google.android.gms[fused_location_provider]/F08FB234 -> Request[PASSIVE, minUpdateInterval=0, hiddenFromAppOps, WorkSource{10097 com.google.android.gms}]
+    02-14 04:37:20.609: fused provider received location[1]
+    02-14 04:37:20.616: network provider received location[1]
+    02-14 04:37:20.959: gps provider -registration 10097/com.google.android.gms[fused_location_provider]/3EE63518
+    02-14 04:37:20.959: gps provider request = ProviderRequest[OFF]
+    02-14 04:37:20.964: passive provider -registration 10097/com.google.android.gms[fused_location_provider]/F08FB234
+    02-14 04:38:19.721: fused provider received location[1]
+    02-14 04:39:19.721: fused provider received location[1]
+    02-14 04:40:19.724: fused provider received location[1]
+    02-14 04:41:19.726: fused provider received location[1]
+    02-14 04:42:19.727: fused provider received location[1]
+    02-14 04:43:19.729: fused provider received location[1]
+    02-14 04:44:19.731: fused provider received location[1]
+    02-14 04:45:19.739: fused provider received location[1]
+    02-14 04:46:19.743: fused provider received location[1]
+    02-14 04:47:19.745: fused provider received location[1]
+    02-14 04:48:19.749: fused provider received location[1]
+    02-14 04:49:19.750: fused provider received location[1]
+    02-14 04:50:19.751: fused provider received location[1]
+    02-14 04:51:19.756: fused provider received location[1]
+    02-14 04:52:19.761: fused provider received location[1]
+    02-14 04:53:19.762: fused provider received location[1]
+    02-14 04:54:19.767: fused provider received location[1]
+    02-14 04:55:19.770: fused provider received location[1]
+    02-14 04:56:19.771: fused provider received location[1]
+    02-14 04:57:19.776: fused provider received location[1]
+    02-14 04:58:19.778: fused provider received location[1]
+    02-14 04:59:19.782: fused provider received location[1]
+    02-14 05:00:19.783: fused provider received location[1]
+    02-14 05:01:19.791: fused provider received location[1]
+    02-14 05:02:19.791: fused provider received location[1]
+    02-14 05:03:19.793: fused provider received location[1]
+    02-14 05:04:19.800: fused provider received location[1]
+    02-14 05:05:19.801: fused provider received location[1]
+    02-14 05:06:19.802: fused provider received location[1]
+    02-14 05:07:19.802: fused provider received location[1]
+    02-14 05:08:19.807: fused provider received location[1]
+    02-14 05:09:19.808: fused provider received location[1]
+    02-14 05:10:19.813: fused provider received location[1]
+    02-14 05:11:19.814: fused provider received location[1]
+    02-14 05:12:19.817: fused provider received location[1]
+    02-14 05:13:19.819: fused provider received location[1]
+    02-14 05:14:19.824: fused provider received location[1]
+    02-14 05:15:19.827: fused provider received location[1]
+    02-14 05:16:19.827: fused provider received location[1]
+    02-14 05:17:19.832: fused provider received location[1]
+    02-14 05:18:19.844: fused provider received location[1]
+    02-14 05:19:19.840: fused provider received location[1]
+    02-14 05:20:19.845: fused provider received location[1]
+    02-14 05:21:19.847: fused provider received location[1]
+    02-14 05:22:19.848: fused provider received location[1]
+    02-14 05:23:19.853: fused provider received location[1]
+    02-14 05:24:19.856: fused provider received location[1]
+    02-14 05:25:19.859: fused provider received location[1]
+    02-14 05:26:19.862: fused provider received location[1]
+    02-14 05:27:19.864: fused provider received location[1]
+    02-14 05:28:19.869: fused provider received location[1]
+    02-14 05:29:19.870: fused provider received location[1]
+    02-14 05:30:19.872: fused provider received location[1]
+    02-14 05:31:19.874: fused provider received location[1]
+    02-14 05:32:19.876: fused provider received location[1]
+    02-14 05:33:19.882: fused provider received location[1]
+    02-14 05:34:19.887: fused provider received location[1]
+    02-14 05:35:19.889: fused provider received location[1]
+    02-14 05:36:19.890: fused provider received location[1]
+    02-14 05:37:19.895: fused provider received location[1]
+    02-14 05:38:19.898: fused provider received location[1]
+    02-14 05:39:19.900: fused provider received location[1]
+    02-14 05:40:19.903: fused provider received location[1]
+    02-14 05:41:19.909: fused provider received location[1]
+    02-14 05:42:19.912: fused provider received location[1]
+    02-14 05:43:19.919: fused provider received location[1]
+    02-14 05:44:19.925: fused provider received location[1]
+    02-14 05:45:19.930: fused provider received location[1]
+    02-14 05:46:19.930: fused provider received location[1]
+    02-14 05:47:19.934: fused provider received location[1]
+    02-14 05:48:19.936: fused provider received location[1]
+    02-14 05:49:19.940: fused provider received location[1]
+    02-14 05:50:19.943: fused provider received location[1]
+    02-14 05:51:19.951: fused provider received location[1]
+    02-14 05:52:19.956: fused provider received location[1]
+    02-14 05:53:19.960: fused provider received location[1]
+    02-14 05:54:19.958: fused provider received location[1]
+    02-14 05:55:19.962: fused provider received location[1]
+    02-14 05:56:19.965: fused provider received location[1]
+    02-14 05:57:19.967: fused provider received location[1]
+    02-14 05:58:19.972: fused provider received location[1]
+    02-14 05:59:19.974: fused provider received location[1]
+    02-14 06:00:19.978: fused provider received location[1]
+    02-14 06:01:19.983: fused provider received location[1]
+    02-14 06:02:19.989: fused provider received location[1]
+    02-14 06:03:19.991: fused provider received location[1]
+    02-14 06:04:19.995: fused provider received location[1]
+    02-14 06:05:19.997: fused provider received location[1]
+    02-14 06:06:20.002: fused provider received location[1]
+    02-14 06:07:20.007: fused provider received location[1]
+    02-14 06:08:20.013: fused provider received location[1]
+    02-14 06:09:20.016: fused provider received location[1]
+    02-14 06:10:20.021: fused provider received location[1]
+    02-14 06:11:20.026: fused provider received location[1]
+    02-14 06:12:20.030: fused provider received location[1]
+    02-14 06:13:20.033: fused provider received location[1]
+    02-14 06:14:20.035: fused provider received location[1]
+    02-14 06:15:20.038: fused provider received location[1]
+    02-14 06:16:20.040: fused provider received location[1]
+    02-14 06:17:20.042: fused provider received location[1]
+    02-14 06:18:20.044: fused provider received location[1]
+    02-14 06:19:20.046: fused provider received location[1]
+    02-14 06:20:20.050: fused provider received location[1]
+    02-14 06:21:20.053: fused provider received location[1]
+    02-14 06:22:20.063: fused provider received location[1]
+    02-14 06:23:20.065: fused provider received location[1]
+    02-14 06:24:20.068: fused provider received location[1]
+    02-14 06:25:20.078: fused provider received location[1]
+    02-14 06:26:20.079: fused provider received location[1]
+    02-14 06:27:20.087: fused provider received location[1]
+    02-14 06:28:20.088: fused provider received location[1]
+    02-14 06:29:20.092: fused provider received location[1]
+    02-14 06:30:20.095: fused provider received location[1]
+    02-14 06:31:20.097: fused provider received location[1]
+    02-14 06:32:20.100: fused provider received location[1]
+    02-14 06:33:20.101: fused provider received location[1]
+    02-14 06:34:20.103: fused provider received location[1]
+    02-14 06:35:20.109: fused provider received location[1]
+    02-14 06:36:20.110: fused provider received location[1]
+    02-14 06:37:20.118: fused provider received location[1]
+    02-14 06:38:20.115: fused provider received location[1]
+    02-14 06:39:20.119: fused provider received location[1]
+    02-14 06:40:20.127: fused provider received location[1]
+    02-14 06:41:20.132: fused provider received location[1]
+    02-14 06:42:20.137: fused provider received location[1]
+    02-14 06:43:20.139: fused provider received location[1]
+    02-14 06:44:20.142: fused provider received location[1]
+    02-14 06:45:20.148: fused provider received location[1]
+    02-14 06:46:20.152: fused provider received location[1]
+    02-14 06:47:20.152: fused provider received location[1]
+    02-14 06:48:20.156: fused provider received location[1]
+    02-14 06:49:20.161: fused provider received location[1]
+    02-14 06:50:20.162: fused provider received location[1]
+    02-14 06:51:20.165: fused provider received location[1]
+    02-14 06:52:20.168: fused provider received location[1]
+    02-14 06:53:20.174: fused provider received location[1]
+    02-14 06:54:20.175: fused provider received location[1]
